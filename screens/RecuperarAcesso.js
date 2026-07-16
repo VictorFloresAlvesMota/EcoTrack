@@ -12,7 +12,7 @@ export default function RecuperarAcesso({ setScreen }) {
           <Ionicons name="arrow-back" size={26} color="#22c55e" />
         </Pressable>
 
-          <Text style={{ fontWeight: "bold", fontSize: 25, color: "#e5e5e5" }}>
+          <Text style={styles.tituloCabecalho}>
             Esqueci minha senha
           </Text>
       </View>
@@ -39,7 +39,10 @@ export default function RecuperarAcesso({ setScreen }) {
           placeholderTextColor="#fff" 
         />
 
-        <Pressable style={styles.button}>
+        <Pressable 
+          onPress={() => setScreen("RedefinirSenha")}
+          style={styles.button}>
+          
           <Text style={styles.buttonText}>➜ Enviar Link de Recuperação</Text>
         </Pressable>
 
@@ -47,7 +50,7 @@ export default function RecuperarAcesso({ setScreen }) {
             Lembrou sua senha?{" "}
             <Pressable 
                 onPress={() => setScreen("Login")}
-                style={{ color: "#22c55e", fontWeight: "bold", textDecorationLine: "underline" }}>    
+                style={styles.linkLogin}>    
                 Fazer Login
             </Pressable>
         </Text>
@@ -86,6 +89,18 @@ const styles = StyleSheet.create({
   buttonText: {
     color: "#000000",
     fontWeight: "bold",
+  },
+
+  tituloCabecalho: {
+    fontWeight: "bold",
+    fontSize: 25,
+    color: "#e5e5e5",
+  },
+
+  linkLogin: {
+    color: "#22c55e",
+    fontWeight: "bold",
+    textDecorationLine: "underline",
   },
 
   header: {

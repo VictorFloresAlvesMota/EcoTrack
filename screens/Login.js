@@ -60,7 +60,6 @@ const styles = StyleSheet.create({
     padding: 30,
   },
 
-  //estilização meia lua
   top: {
     position: "absolute",
     top: 0,

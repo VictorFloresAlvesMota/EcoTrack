@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#0f0f0f",
   },
 
-  //estilização meia lua
   top: {
     position: "absolute",
     top: 0,
@@ -119,7 +118,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 25,
 },
 
-  headerText: {
+headerText: {
     color: "#e5e5e5",
     fontSize: 20,
     fontWeight: "bold",
